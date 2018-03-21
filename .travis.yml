@@ -47,9 +47,9 @@ before_install:
     if [[ "$VULKAN_BUILD_TARGET" == "ANDROID" ]]; then
       # Install the Android NDK.
       export ARCH=`uname -m`
-      wget http://dl.google.com/android/repository/android-ndk-r15c-linux-${ARCH}.zip
-      unzip -u -q android-ndk-r15c-linux-${ARCH}.zip
-      export ANDROID_NDK_HOME=`pwd`/android-ndk-r15c
+      wget http://dl.google.com/android/repository/android-ndk-r17-beta1-linux-${ARCH}.zip
+      unzip -u -q android-ndk-r17-beta1-linux-${ARCH}.zip
+      export ANDROID_NDK_HOME=`pwd`/android-ndk-r17-beta1
       export JAVA_HOME="/usr/lib/jvm/java-8-oracle"
       export PATH="$ANDROID_NDK_HOME:$PATH"
     fi
